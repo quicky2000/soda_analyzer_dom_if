@@ -3,10 +3,10 @@
 
 #include "general_analyzer_if.h"
 
-namespace osm_diff_analyzer_if
+namespace osm_diff_analyzer_dom_if
 {
   template <class T>
-    class dom_analyzer_generic_if: public general_analyzer_if
+    class dom_analyzer_generic_if: public osm_diff_analyzer_if::general_analyzer_if
     {
     public:
       typedef T node_type;
