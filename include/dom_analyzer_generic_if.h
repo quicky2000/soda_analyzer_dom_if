@@ -1,12 +1,10 @@
 #ifndef _DOM_ANALYZER_GENERIC_IF_H_
 #define _DOM_ANALYZER_GENERIC_IF_H_
 
-#include "general_analyzer_if.h"
-
 namespace osm_diff_analyzer_dom_if
 {
   template <class T>
-    class dom_analyzer_generic_if: public osm_diff_analyzer_if::general_analyzer_if
+    class dom_analyzer_generic_if
     {
     public:
       typedef T node_type;

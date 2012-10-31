@@ -4,11 +4,17 @@
 #include "dom_analyzer_generic_if.h"
 #include "xmlParser.h"
 
+#include "diff_analyzer_if.h"
+
+
 namespace osm_diff_analyzer_dom_if
 {
-  // Type defining interface of dom_analyzer independantly of type used to represent the XML tree
-  typedef dom_analyzer_generic_if<XMLNode> dom_analyzer_if;
   typedef XMLNode t_dom_tree;
+  class dom_analyzer_if: public osm_diff_analyzer_if::diff_analyzer_if, public dom_analyzer_generic_if<XMLNode>
+  {
+    public:
+    inline virtual ~dom_analyzer_if(void){};
+  };
 }
 
 #endif // _DOM_ANALYZER_IF_H_
