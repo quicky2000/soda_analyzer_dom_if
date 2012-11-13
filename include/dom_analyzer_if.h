@@ -28,6 +28,7 @@ namespace osm_diff_analyzer_dom_if
   class dom_analyzer_if: public osm_diff_analyzer_if::diff_analyzer_if, public dom_analyzer_generic_if<XMLNode>
   {
     public:
+    virtual void analyze(const XMLNode & p_tree)=0;
     inline virtual ~dom_analyzer_if(void){};
   };
 }
