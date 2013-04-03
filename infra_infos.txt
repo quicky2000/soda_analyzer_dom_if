@@ -1,4 +1,4 @@
-depend:EXT_xmlParser osm_diff_analyzer_if
+depend:EXT_xmlParser soda_analyzer_if
 CFLAGS:-Wall -g
 LDFLAGS:
 
